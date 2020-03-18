@@ -10,31 +10,27 @@
   <div class="dropdown" style="z-index: 9999;">
     <button class="dropbtn"><img src="./assets/settings.png" width="100%"></img></button>
     <div class="dropdown-content">
+      <p>Link Type</p>
       <select id="links" name="links">
         <option value="keywords">keywords</option>
         <option value="genres">genres</option>
         <option value="cast">cast</option>
         <option value="crew">crew</option>
       </select>
-      <!-- <select id="groups" name="groups">
-        <option value="vote_average">vote_average</option>
-        <option value="budget">budget</option>
-        <option value="revenue">revenue</option>
-      </select> -->
+      <p>Similarity</p>
       <input type="range" min="1" max="5" value="2" id="strength">
       <button type="button" id="filter">Filter Data</button>
     </div>
   </div>
   <svg class='para'></svg>
   <svg class='bubble' id="bubble"></svg>
-
   <div id="vis">
     <svg id="graph"></svg>
     <div id="recscroller"><svg id="recs"></svg></div>
   </div>
   <div id="vtooltip"></div>
   <!--<svg class='para'></svg>-->
-
+  
   <script src="./scripts/d3/d3.v4.js"></script>
   <script src="./scripts/d3/d3.scale.chromatic.js"></script>
   <script src="./scripts/d3/d3.queue.js"></script>
@@ -58,9 +54,9 @@
             }
           }
         }
-      }
+      } 
   </script>
-  <!-- INTEGRATION SCRIPTS
+  <!-- INTEGRATION SCRIPTS 
   <script src='./scripts/main.js'></script>-->
   <script src='./scripts/r/bubblechart.js'></script>
   <script src='./scripts/b/ParallelChart.js'></script>
